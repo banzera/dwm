@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char font[]            = "-*-nimbus mono l-medium-r-*-*-16-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -21,7 +21,8 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
 	{ "Google-chrome",   NULL,       NULL,       1 << 8,       False,       -1 },
-	{ "Eclipse",   NULL,       NULL,       1 << 2,       False,       -1 },
+	{ "Eclipse",   "Eclipse",       NULL,       1 << 2,       False,       -1 }, // The main Eclipse window
+	{ "Eclipse",   "eclipse",      NULL,       1 << 2,       True,       -1 }, // The Eclipse splash screen
 };
 
 /* layout(s) */
